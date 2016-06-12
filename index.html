@@ -449,6 +449,9 @@
     
     function loadResult(){
         event.preventDefault()
+        if ($(".zodiac").css('display') == 'none'  ) {
+        $('.nav-tabs a[href="#scorpio"]').tab('show');
+        }
         month = $("#dob-month").val()
         day = $("#dob-day").val()
         
